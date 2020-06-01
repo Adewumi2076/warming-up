@@ -1,0 +1,72 @@
+<html>
+  <head>
+    <title>Lab 3</title>
+    <h1>List of top IMDB movies</h1>
+  <head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+            <th>#</th>
+            <th>Title</th>
+            <th>Rating</th>
+            <th>Year</th>
+            <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr data-number="1">
+          <td>1</td>
+          <td> The Shawshank Redemption</td>
+          <td>"9.2"</td>
+          <td>1994</td>
+          <td><a href="#" class="edit">Edit</a><a href="#" class="delete">Delete</a></td>
+        </tr>
+        <tr data-number="2">
+          <td>2</td>
+            <td>The Godfather</td>
+            <td>"9.1"</td>
+            <td>1972</td>
+          <td><a href="#" class="edit">Edit</a><a href="#" class="delete">Delete</a></td>
+        </tr>
+        <tr data-number="3">
+          <td>3</td>
+          <td>The Dark Knight</td>
+          <td>"9.0"</td>
+          <td>2008</td>
+          <td><a href="#" class="edit">Edit</a><a href="#" class="delete">Delete</a></td>
+        </tr>
+        <tr data-number="4">
+          <td>4</td>
+          <td> 12 Angry Men</td>
+          <td>"8.9"</td>
+          <td>1957</td>
+          <td><a href="#" class="edit">Edit</a><a href="#" class="delete">Delete</a></td>
+        </tr>
+        <tr data-number="5">
+          <td>5</td>
+          <td>Schindler's List</td>
+          <td>"8.9"</td>
+          <td>1993</td>
+          <td><a href="#" class="edit">Edit</a><a href="#" class="delete">Delete</a></td>
+        </tr>
+      </tbody>
+    </table>
+    <form id="inputForm">
+      <input type="number" min="0" id="numberInput" placeholder="Enter Number" required>
+        <input type="text" min="0" id="titleInput" placeholder="Enter Title" required>
+        <input type="text" min="0" id="ratingInput" placeholder="Enter Rating" required>
+        <input type="text" min="0" id="yearInput" placeholder="Enter Year" required>
+      <input type="hidden" value="add" id="actionInput">
+      <input type="hidden" value="" id="rownumInput">
+      <input type="submit" value="Add Data">
+    </form>
+  </body>
+  <script
+  src="https://code.jquery.com/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+  crossorigin="anonymous"></script>
+  <script src="OriginalLab3.js">
+  </script>
+</html>
+
